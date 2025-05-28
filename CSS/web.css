@@ -25,7 +25,19 @@ body{
 /*Logo-Encabezado */
 .LOGO{
   height: 100px;
-  margin-left: 1250; 
+  margin-left: 15px;
+  margin-right: 1187px; 
+}
+
+/*Logo-Usuario */
+.ICONO-USUARIO {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ICONO-USUARIO:hover {
+  transform: scale(1.05);
 }
 
 /*Imagen-Titulo del juego */

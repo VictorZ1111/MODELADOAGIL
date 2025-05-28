@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>GUIA NEW HERO</title>
-        <link rel="stylesheet" href="../CSS/web.css">
+        <link rel="stylesheet" href="CSS/web.css">
     </head>
     <body>
         <header class="ENCABEZADO">
             <img src="../IMAGES/CT.png" alt="LOGO CAPTAIN TSUBASA" class="LOGO">
+            <a href="../HTML/login.html"><img src="../IMAGES/USUARIO.png" alt="Iniciar sesión" class="ICONO-USUARIO"></a>
         </header>
         <div class="GIF">
             <img src="../IMAGES/CARLOSGIF.gif" alt="CARLOS GIF">
@@ -15,31 +16,8 @@
         </div>
         <div class="ESPACIO"></div>
         
-        <div class="PERSONAJES">
-            <div class="PERSONAJE">
-                <a href="../HTML/web2.html?id=TSUBASA"><img src="../IMAGES/TSUBASA.png" alt="TSUBASA OZORA"></a>
-                <p><strong> TSUBASA OZORA</p></strong>
-            </div>
-          
-            <div class="PERSONAJE">
-                <a href="../HTML/web2.html?id=MATSUYAMA"><img src="../IMAGES/MATSUYAMA.png" alt="HIKARU MATSUYAMA"></a>
-                <p><strong> HIKARU MATSUYAMA</p></strong>
-            </div>
-
-            <div class="PERSONAJE">
-                <a href="../HTML/web2.html?id=AOI"><img src="../IMAGES/AOI.png" alt="AOI SHINGO"></a>
-                <p><strong> AOI SHINGO</p></strong>
-            </div>
-
-            <div class="PERSONAJE">
-                <a href="../HTML/web2.html?id=HYUGA"><img src="../IMAGES/HYUGA.png" alt="KOJIRO HYUGA"></a>
-                <p><strong> KOJIRO HYUGA</p></strong>
-            </div>
-
-            <div class="PERSONAJE">
-                <a href="../HTML/web2.html?id=CARLOS"><img src="../IMAGES/CARLOS.png" alt="CARLOS BARA"></a>
-                <p><strong> CARLOS BARA</p></strong>
-            </div>
-        </div>
+        <div class="PERSONAJES" id="personajesAdmin"></div>
+        
+        <script src="SCRIPTS/index.js"></script>
     </body>
 </html>

@@ -3,18 +3,16 @@ const personajeId = params.get("id");
 
 const contenedor = document.getElementById("CONTENEDOR-PERSONAJES");
 
-fetch("../JSON/personajes.json")
+fetch(`/api/personajes/${personajeId}`)
   .then(res => res.json())
-  .then(data => {
-    const personaje = data.find(p => p.id === personajeId);
-
-    if (!personaje) {
+  .then(personaje => {
+    if (!personaje || personaje.error) {
       contenedor.innerHTML = "<p>No hay informacion del personaje</p>";
       return;
     }
 
     contenedor.innerHTML = `
-      <img src="${personaje.imagen}" alt="${personaje.nombre}">
+      <img src="/${personaje.imagen}" alt="${personaje.nombre}">
       <h1>${personaje.nombre}</h1>
 
       <h2>Habilidades</h2>
@@ -35,5 +33,20 @@ fetch("../JSON/personajes.json")
         </div>
       `).join("")}
     `;
-  })
+  });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btnVolver = document.getElementById('btnVolver');
+  if (btnVolver) {
+    btnVolver.addEventListener('click', (e) => {
+      e.preventDefault(); // Previene que el <a> actúe con su href (aunque no lo tenga)
+      const rol = localStorage.getItem('rol');
+      if (rol === 'admin') {
+        window.location.href = '../HTML/admininicio.html';
+      } else {
+        window.location.href = '../index.html';
+      }
+    });
+  }
+});
 
