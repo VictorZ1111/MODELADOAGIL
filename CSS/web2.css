@@ -1,0 +1,99 @@
+/*Cuerpo de la web */
+body{
+  background-color: #003c6a;
+  margin: 0%;
+  background-image: url("../IMAGES/FONDO.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*Encabezado */
+.ENCABEZADO {
+  position: fixed;
+  display: flex;
+  align-items: center; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  z-index: 1000;
+}
+
+/*Logo-Encabezado */
+.LOGO{
+  height: 100px;
+  margin-left: 1133; 
+}
+
+/*Boton voler */
+.BOTON{
+  color: white;               
+  background-color: black;    
+  border: 2px solid white;
+  border-radius: 7px;    
+  padding: 8px 15px;          
+  margin-left: 20px;          
+  font-size: 16px;            
+  cursor: pointer;
+  transition: 0.3s;  
+}
+
+/*Efecto boton al pasar mouse */
+.BOTON:hover {
+  transform: scale(1.05);
+}
+
+/*Contenedor de los personajes */
+#CONTENEDOR-PERSONAJES {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80%;
+  max-width: 900px;
+  margin: 120px auto 40px auto; 
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*Imagen del personaje */
+#CONTENEDOR-PERSONAJES img {
+  width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+
+/*Títulos */
+#CONTENEDOR-PERSONAJES h2 {
+  margin-top: 30px;
+  color: #000000;
+  font-family: Arial;
+}
+
+/*Nombre del jugador */
+#CONTENEDOR-PERSONAJES h1 {
+  font-family: Arial;
+}
+
+/*Estilo para el texto de cada habilidad o tiro, tambien la linea de separacion */
+.HABILIDADES {
+  border-top: 2px solid #000000;
+  padding: 10px 0;
+  margin: 10px auto;
+  width: 80%;
+  text-align: left;
+  font-family: Arial;
+}
+
+/*Nombre de la habilidad */
+.HABILIDADES strong {
+  font-size: 18px;
+  color: #000000;
+}
+
+/*Separación de los datos de la habilidad */
+.HABILIDADES p {
+  margin: 4px 0;
+}
+

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "TSUBASA",
+    "nombre": "Tsubasa Ozora",
+    "imagen": "../IMAGES/TSUBASA.png",
+    "habilidades": [
+      {
+        "nombre": "Visión de juego",
+        "descripcion": "Mejora la precisión de los pases.",
+        "como_conseguir": "Completa el entrenamiento de pases en el modo historia."
+      }
+    ],
+    "tiros": [
+      {
+        "nombre": "Tiro con efecto",
+        "descripcion": "Un disparo poderoso que sobrevuela sobre defensas.",
+        "como_conseguir": "Ganar el partido contra Alemania en la historia."
+      }
+    ]
+  },
+  {
+    "id": "HYUGA",
+    "nombre": "Kojiro Hyuga",
+    "imagen": "../IMAGES/HYUGA.png",
+    "habilidades": [
+      {
+        "nombre": "Fuerza bruta",
+        "descripcion": "Aumenta la potencia del disparo.",
+        "como_conseguir": "Sigue la ruta del colegio Toho."
+      }
+    ],
+    "tiros": [
+      {
+        "nombre": "Tiro del Tigre",
+        "descripcion": "Un disparo directo con enorme potencia.",
+        "como_conseguir": "Derrota al equipo de Meiwa en el episodio New Hero."
+      }
+    ]
+  },
+  {
+    "id": "MATSUYAMA",
+    "nombre": "Hikaru Matsuyama",
+    "imagen": "../IMAGES/MATSUYAMA.png",
+    "habilidades": [
+      {
+        "nombre": "Tactica avalancha",
+        "descripcion": "Mejora significativamente las estadisticas de tu personaje.",
+        "como_conseguir": "Sigue la ruta del colegio Furano."
+      }
+    ],
+    "tiros": [
+      {
+        "nombre": "Tiro del aguila",
+        "descripcion": "Un disparo bajo de larga distancia y potencia.",
+        "como_conseguir": "Subir el grado de amistad con Matsuyama a B."
+      }
+    ]
+  },
+  {
+    "id": "AOI",
+    "nombre": "Aoi Shingo",
+    "imagen": "../IMAGES/AOI.png",
+    "habilidades": [
+      {
+        "nombre": "Semaforos verdes",
+        "descripcion": "Aumenta la velocidad en un 50% mas a tu personaje.",
+        "como_conseguir": "Sube el grado de amistad con Aoi a S."
+      }
+    ],
+    "tiros": [
+      {
+        "nombre": "Tiro acrobatico",
+        "descripcion": "Un tiro malabarista con gran potencia.",
+        "como_conseguir": "Gana 3 partidos consecutivos con una valoracion S en remates."
+      }
+    ]
+  },
+  {
+    "id": "CARLOS",
+    "nombre": "Carlos Bara",
+    "imagen": "../IMAGES/CARLOS.png",
+    "habilidades": [
+      {
+        "nombre": "Ciborg del futbol",
+        "descripcion": "Mejora las estadisticas de tecnica y regate de tu personaje.",
+        "como_conseguir": "Obten una valoracion de S en regates y técnicas en 2 partidos consecutivos."
+      }
+    ],
+    "tiros": [
+      {
+        "nombre": "Tiro Sagitario",
+        "descripcion": "Un disparo de corta distancia pero con gran potencia.",
+        "como_conseguir": "Consigue grado A en amistad con Carlos."
+      }
+    ]
+  }
+]
