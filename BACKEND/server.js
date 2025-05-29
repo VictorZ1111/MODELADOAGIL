@@ -16,10 +16,17 @@ app.use(session({
   saveUninitialized: true
 }));
 
-mongoose.connect('mongodb://localhost:27017/ADMINISTRADORDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+const uri = 'mongodb+srv://VZFUT:VZFUT@modeladoagil.9qvjbjv.mongodb.net/ADMINISTRADORDB?retryWrites=true&w=majority&appName=MODELADOAGIL';
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB Atlas conectado'))
+  .catch(err => console.error('Error de conexión:', err));
+
+
+//mongoose.connect('mongodb://localhost:27017/ADMINISTRADORDB', {
+//  useNewUrlParser: true,
+//  useUnifiedTopology: true
+//});
 
 const PersonajeSchema = new mongoose.Schema({
   id: String,
