@@ -1,0 +1,193 @@
+/*Cuerpo de la web */
+body{
+  background-color: #003c6a;
+  margin: 0%;
+  background-image: url("../IMAGES/FONDO.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 120px;
+}
+
+/*Encabezado */
+.ENCABEZADO {
+  position: fixed;
+  display: flex;
+  align-items: center; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  z-index: 1000;
+}
+
+/*Logo-Encabezado */
+.LOGO{
+  height: 100px;
+  margin-left: 15;
+  margin-right: 1127px;  
+}
+
+/*Logo-Usuario */
+.ICONO-USUARIO {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ICONO-USUARIO:hover {
+  transform: scale(1.05);
+}
+
+.ICONO-MENU {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 20; 
+}
+
+.ICONO-MENU:hover {
+  transform: scale(1.05);
+}
+
+.MENU-LATERAL {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.MENU-LATERAL a {
+  color: #fff;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.MENU-LATERAL a:hover {
+  text-decoration: underline;
+}
+
+
+.contenedor-form {
+  background: #fff;
+  color: #222;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px 25px 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-form h2 {
+  margin-bottom: 20px;
+  color: #003c6a;
+}
+
+#formPersonaje {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#formPersonaje input,
+#formPersonaje textarea,
+#formPersonaje button {
+  width: 100%;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#formPersonaje textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+#formPersonaje button {
+  background: #003c6a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+#formPersonaje button:hover {
+  background: #005a9e;
+}
+
+
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    border-radius: 4px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.user-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.user-dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -220px; /* empieza oculto */
+  width: 220px;
+  height: 100%;
+  background-color: #002e4d;
+  color: white;
+  z-index: 1000;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: right 0.3s ease;
+  box-shadow: -3px 0 8px rgba(0,0,0,0.5);
+}
+
+#sidebar a {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+#sidebar a:hover {
+  background-color: #005a9c;
+}

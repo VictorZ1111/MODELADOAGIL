@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Administrar Personajes</title>
+    <link rel="stylesheet" href="../CSS/webADPE.css">
+</head>
+<body>
+    <header class="ENCABEZADO">
+        <img src="../IMAGES/CT.png" alt="LOGO CAPTAIN TSUBASA" class="LOGO">
+        <div class="user-menu-container">
+            <img src="../IMAGES/USUARIO.png" alt="Usuario" class="ICONO-USUARIO" id="userIcon">
+            <div id="userDropdown" class="user-dropdown" style="display: none;">
+                <a href="../index.html" >Cerrar sesión</a>
+            </div>
+        </div>
+        <img src="../IMAGES/MENU.png" alt="Menú" class="ICONO-MENU" id="menuIcon">
+    </header>
+
+    <!-- Menú lateral oculto -->
+    <div id="sidebar">
+        <a href="../HTML/admininicio.html">INICIO</a>
+        <a href="../HTML/adminpersonajes.html">ADMINISTRACION</a>
+    </div>
+
+    <div class="contenedor-form">
+    <h2>Agregar Personaje</h2>
+    <form id="formPersonaje">
+        <input type="text" name="id" id="id" placeholder="ID (ej: TSUBASA)" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <input type="text" name="imagen" id="imagen" placeholder="Ruta de imagen (ej: IMAGES/TSUBASA.png)" required>
+
+        <h3>Habilidad</h3>
+        <input type="text" id="hab-nombre" placeholder="Nombre de la habilidad" required>
+        <input type="text" id="hab-desc" placeholder="Descripción de la habilidad" required>
+        <input type="text" id="hab-cons" placeholder="Cómo se consigue la habilidad" required>
+
+        <h3>Tiro</h3>
+        <input type="text" id="tiro-nombre" placeholder="Nombre del tiro" required>
+        <input type="text" id="tiro-desc" placeholder="Descripción del tiro" required>
+        <input type="text" id="tiro-cons" placeholder="Cómo se consigue el tiro" required>
+
+        <button type="submit">Agregar Personaje</button>
+    </form>
+    </div>
+
+    <script src="../SCRIPTS/menu.js"></script>
+    <script src="../SCRIPTS/adminpersonajes.js"></script>
+</body>
+</html>

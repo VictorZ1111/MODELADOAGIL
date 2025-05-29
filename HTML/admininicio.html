@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>GUIA NEW HERO-ADMINISTRADOR</title>
+        <link rel="stylesheet" href="../CSS/webADIN.css">
+    </head>
+    <body>
+        <header class="ENCABEZADO">
+            <img src="../IMAGES/CT.png" alt="LOGO CAPTAIN TSUBASA" class="LOGO">
+            <div class="user-menu-container">
+                <img src="../IMAGES/USUARIO.png" alt="Usuario" class="ICONO-USUARIO" id="userIcon">
+                <div id="userDropdown" class="user-dropdown" style="display: none;">
+                    <a href="../index.html" onclick="localStorage.removeItem('rol')">Cerrar sesión</a>
+                </div>
+            </div>
+            <img src="../IMAGES/MENU.png" alt="Menú" class="ICONO-MENU" id="menuIcon">
+        </header>
+
+        <div id="sidebar">
+            <a href="../HTML/admininicio.html">INICIO</a>
+            <a href="../HTML/adminpersonajes.html">ADMINISTRACION</a>
+        </div>
+
+        <div class="GIF">
+            <img src="../IMAGES/CARLOSGIF.gif" alt="CARLOS GIF">
+        </div>
+        <div class="TITULO">
+            <img src="../IMAGES/TITULO.png" alt="LOGO DEL JUEGO" width="700px">
+        </div>
+        <div class="ESPACIO"></div>
+        
+        <div class="PERSONAJES" id="personajesAdmin"></div>
+
+        <script src="../SCRIPTS/menu.js"></script>
+        <script src="../SCRIPTS/index.js"></script>
+    </body>
+</html>
